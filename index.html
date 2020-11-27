@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Filtro CSS</title>
+    </head>
+
+    <style>
+
+        body {
+            margin: 0;
+            margin-top: 40px;
+        }
+
+        #grid{
+            display: flex;
+            justify-content: space-around;
+        }
+
+        img {
+            width: 300px;
+        }
+
+        h3 {
+            font-family: 'Montserrat';
+            font-weight: 300;
+        }
+    
+        .filtro2 {
+            filter: grayscale(100%);
+        }
+
+        .filtro3 {
+            filter: invert(100%);
+        }
+
+        footer {
+            background-color: #4B515D;
+            color: white;
+            font-family: 'Montserrat';
+            display: flex;
+            justify-content: center;
+            align-items: center;            
+            min-height: 100px;
+        }
+
+        footer section {
+            line-height: 10px;
+        }
+
+        footer p {
+            display: inline-block;
+        }
+
+        footer a {
+            text-decoration: none;
+            color: #2E2E2E;
+        }
+
+        footer a:hover {
+            color: #3F729B;
+            text-decoration: underline;
+        }
+
+    </style>
+
+    <body>
+
+        <div id="grid">
+
+            <div>
+                <img src="./jack-dong-yJozLVBxNA0-unsplash.jpg" class="filtro1" />
+                <h3>Normal</h3>
+            </div>
+            
+            <div>
+                <img src="./jack-dong-yJozLVBxNA0-unsplash.jpg" class="filtro2" />
+                <h3>Gray Scale</h3>
+            </div>
+
+            <div>
+                <img src="./jack-dong-yJozLVBxNA0-unsplash.jpg" class="filtro3" />
+                <h3>Invert</h3>
+            </div>
+
+        </div>    
+
+        <footer>
+            <section>
+                <p>Image by <a href="https://unsplash.com/@lwdzl"> Jack Dong </a> </p> <br>
+                <p> Code and Design by <a href="https://github.com/Cupnodes"> Cupnodes </a> </p>
+            </section>
+        </footer>
+
+    
+
+    </body>
+</html>
